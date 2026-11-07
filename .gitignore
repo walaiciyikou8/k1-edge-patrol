@@ -1,0 +1,43 @@
+# Python 运行环境与缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.coverage
+
+# 运行时产物：含人脸与抓拍，禁止提交
+k1-edge/captures/*.jpg
+k1-edge/captures/*.jpeg
+k1-edge/captures/*.png
+k1-edge/captures/_tts*.wav
+k1-edge/captures/_beep*.wav
+k1-edge/captures/_ab*.wav
+k1-edge/captures/_events.jsonl
+k1-edge/captures/_actions.jsonl
+k1-edge/gallery/*/
+k1-edge/gallery/**/*.jpg
+k1-edge/gallery/**/*.png
+!k1-edge/gallery/.gitkeep
+
+# 本机配置与密钥（绝不上传）
+.env
+*.local.json
+secrets.json
+*_key.txt
+*.pem
+
+# 打包、日志与临时文件
+*.zip
+*.log
+*.tmp
+*.bak
+build_report.py
+方案书_content_*.html
+
+# 编辑器与系统
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
